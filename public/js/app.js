@@ -1,5 +1,8 @@
-let arrey = [null, null, null, null, null, null, null, null, null]
 
+
+
+let arrey = [null, null, null, null, null, null, null, null, null]
+let body = document.body
 let tawazone = document.getElementById('tike_take')
 let test = document.getElementById('smiya')
 let tarja3e = document.getElementById('t3awid')
@@ -7,6 +10,34 @@ let btn = document.getElementsByClassName('border2')
 let karwa = 'X'
 let lbadya = true
 test.textContent = `daba nobte ${karwa}`
+let ana = document.getElementById("tajriba")
+let ana1 = document.getElementById("t7ayade")
+let boutona = document.getElementById("o")
+let button1 = document.getElementById("x")
+
+console.log(boutona);
+
+boutona.addEventListener('click', () => {
+    if (ana.style.display = "block") {
+        ana1.style.display = "none"
+        karwa = "O"
+    }
+}
+
+
+)
+button1.addEventListener('click', () => {
+    if (ana.style.display = "block") {
+        ana1.style.display = "none"
+        karwa = "X"
+    }
+}
+
+
+)
+
+
+    
 
 
 tawazone.querySelectorAll('.border2').forEach((e, index) => {
@@ -20,10 +51,11 @@ tawazone.querySelectorAll('.border2').forEach((e, index) => {
 
         if (liayrba7e()) {
             lbadya = false
-            test.textContent = `mone ${karwa} rba7e`
-            
+            test.textContent = `player you have ${karwa} wine`
+            body.style.backgroundColor = "#090936"
+
             ta7yade()
-            
+
 
         } else if (arrey.every(c => c)) {
             test.textContent = "waaaw t3adalto"
@@ -33,15 +65,15 @@ tawazone.querySelectorAll('.border2').forEach((e, index) => {
 
         if (karwa === "X") {
             karwa = "O"
-test.textContent = `daba nobte ${karwa}`
+            test.textContent = ` player 1 you have ${karwa}`
 
         } else {
             karwa = "X"
 
-test.textContent = `daba nobte ${karwa}`
+            test.textContent = ` player 2 you have ${karwa}`
         }
 
-   
+
     });
 });
 const ta7yade = () => {
@@ -51,7 +83,7 @@ const ta7yade = () => {
 }
 
 const liayrba7e = () => {
- 
+
     if (arrey[0] === karwa && arrey[3] === karwa && arrey[6] === karwa) {
         return true;
     }
@@ -87,6 +119,7 @@ const t3awid = () => {
     lbadya = true
     tawazone.querySelectorAll('.border2').forEach(e => {
         e.textContent = ''
+        body.style.backgroundColor = "#272728c1"
     });
 }
 

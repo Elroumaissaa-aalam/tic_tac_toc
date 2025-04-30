@@ -1,42 +1,127 @@
-.border{
-    border: 2px solid palevioletred;
-    width: 40vw;
-    height: 55vh;
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
 }
-.border2{
-    border: 2px solid palevioletred;
-  width: calc(3/40);
-  height: calc(3/55);
+
+body {
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+    background-color: #272728c1;
+   
+   
 }
-body{
+.flex1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   
+    width: 100%;
+    height: 80vh;
+    display: none;
+    padding-inline: 55vh;
+  
  
-    background-color: #80808059;
+  
+}
+
+.border {
+    border: 2px solid black;
+    width: 40vw;
+    height: 55vh;
+
+
+
 
 }
-.grid{
+
+.border2 {
+    border: 2px solid #000000;
+    background-color: #d87093ac;
+    width: calc(3/40);
+    height: calc(3/55);
+    font-size: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+gap: 15vh;
+}
+
+
+
+.grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
+
 
 }
-.flex{
+
+.flex {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5vh;
+    padding-bottom: 5vh;
+
 }
-#t3awid{
+
+#t3awid {
     background-color: palevioletred;
     border: none;
     border-radius: 15px;
     padding: 2vh;
 }
-.center{
+
+.center {
     text-align: center;
+    color: palevioletred;
+    padding-bottom: 5vh;
+    
 }
-.center{
-    text-align: center;
+
+
+
+
+
+
+.lwaste{
+  
+  background-image: url(../images/game.png);
+   color: white;
+   font-size: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width:  100%;
+    gap: 10px;
+
+}
+.btn{
+    background-color: #090936;
+    padding: 15px;
+    padding-inline: 10vh;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 2px 2px 2px 10px #01010147;
+}
+.o{
+    font-size: 7rem;
+    color: #a00303;
+}
+.o:hover{
+
+ color: #ff0101;
+ transform: scale(1.55);
+}
+.x{
+    font-size: 6rem;
+    color:  #090936;
+}
+.x:hover{
+    color: #0000af;
+    transform: scale(1.55);
+
 }
