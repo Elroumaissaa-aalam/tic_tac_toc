@@ -1,0 +1,42 @@
+.border{
+    border: 2px solid palevioletred;
+    width: 40vw;
+    height: 55vh;
+}
+.border2{
+    border: 2px solid palevioletred;
+  width: calc(3/40);
+  height: calc(3/55);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    background-color: #80808059;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+}
+#t3awid{
+    background-color: palevioletred;
+    border: none;
+    border-radius: 15px;
+    padding: 2vh;
+}
+.center{
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
