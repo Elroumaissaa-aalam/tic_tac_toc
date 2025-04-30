@@ -18,6 +18,19 @@ tawazone.querySelectorAll('.border2').forEach((e, index) => {
         arrey[index] = karwa;
         e.textContent = karwa;
 
+        if (liayrba7e()) {
+            lbadya = false
+            test.textContent = `mone ${karwa} rba7e`
+            
+            ta7yade()
+            
+
+        } else if (arrey.every(c => c)) {
+            test.textContent = "waaaw t3adalto"
+            lbadya = false
+            ta7yade()
+        }
+
         if (karwa === "X") {
             karwa = "O"
 test.textContent = `daba nobte ${karwa}`
@@ -28,18 +41,7 @@ test.textContent = `daba nobte ${karwa}`
 test.textContent = `daba nobte ${karwa}`
         }
 
-        if (liayrba7e()) {
-            lbadya = false
-            test.textContent = `mone ${karwa} rba7e`
-            
-            ta7yade()
-            
-
-        } else if (!liayrba7e() && arrey.every(c => c)) {
-            test.textContent = "waaaw t3adalto"
-            lbadya = false
-            ta7yade()
-        }
+   
     });
 });
 const ta7yade = () => {
